@@ -8,6 +8,8 @@
 
 
 <?php
+
+    #1
     $a = readline("Enter a: ");
     $b = readline("Enter b: ");
     $c = readline("Enter c: ");
@@ -15,19 +17,24 @@
     $e = readline("Enter e: ");
 
     echo "The value is: ",($a+$b)*$c/$d-$e,"\n";
-    $a += 6;
-    $b -= 3;
-    $c *= 2;
-    $d /= 2;
-    $e %= 2;
+
+    #2
+    $num = readline("Enter the number: ");
+    $a += $num;
+    $b -= $num;
+    $c *= $num;
+    $d /= $num;
+    $e %= $num;
 
     echo $a," ",$b," ",$c," ",$d," ",$e,"\n";
 
+    #3
     $a++;
     echo $a,"\n";
     $a--;
     echo $a,"\n";
 
+    #4
     $x = $y = $z = 9;
     echo $x," ",$y," ",$z;
 ?>
