@@ -30,14 +30,19 @@
 
     #3
     $a++;
-    echo $a,"\n";
+    echo "After incrementing a: ",$a,"\n";
     $a--;
-    echo $a,"\n";
+    echo "After decremnting a: ",$a,"\n";
 
-    #4
+    // #4
     $x = $y = $z = 9;
     echo $x," ",$y," ",$z;
 ?>
 
+<?php 
+    $username = readline("Enter username: ");
 
+    $greeting = !empty($username) ? "Welcome, $username" : "Welcome, Guest";
 
+    echo $greeting;
+?>
