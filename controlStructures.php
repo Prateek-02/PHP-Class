@@ -1,3 +1,5 @@
+<!-- 1 -->
+
 <?php
     // $customerType = readline("Enter the type of customer: ");
     // $purchaseAmount = readline("Enter amount: ");
@@ -20,8 +22,9 @@
     // echo "Final Amount is: ",$finalAmount;
 ?>
 
-
+<!-- 2 -->
 <?php
+/*
     $day = readline("Input day: ");
     $month = readline("Input month: ");
     $year = readline("Input year: ");
@@ -142,4 +145,43 @@
     else{
         echo "Invalid format";
     }
+*/
+?>
+
+
+<!-- 3 -->
+
+<?php
+    $income = readline("Enter your income: ");
+    $age = readline("Enter your age: ");
+    $tax;
+
+    if($income < 10000){
+        echo "No tax applied";
+        $tax = 0;
+    }
+
+    else if($income >= 10000 && $income <=20000){
+        if($age<65){
+            echo "10% tax is applied\n";
+            $tax = $income*(0.10);
+        }
+        else{
+            echo "5% tax is applied\n";
+            $tax = $income*(0.05);
+        }
+    }
+    else if($income > 20000){
+        if($age<65){
+            echo "20% tax is applied\n";
+            $tax = $income*(0.20);
+        }
+        else{
+            echo "15% tax is applied\n";
+            $tax = $income*(0.15);
+        }
+    }
+
+    echo "Tax to be paid is: ",$tax;
+
 ?>
