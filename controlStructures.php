@@ -26,7 +26,7 @@
     $month = readline("Input month: ");
     $year = readline("Input year: ");
 
-    if( ($year > 0) && ($month >= 1 && $month<=12)){
+    if( ($year > 0) && ($day > 0 && $day <= 31) && ($month >= 1 && $month<=12)){
         switch($month){
             case 1:
                 if($day > 0 && $day<=31){
@@ -140,6 +140,6 @@
         }
     }
     else{
-        echo "Invalid";
+        echo "Invalid format";
     }
 ?>
