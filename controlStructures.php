@@ -190,61 +190,80 @@
 <!-- 4 -->
 
 <?php
-    // $mealType  = readline("Enter your meal type: ");
+    $mealType  = readline("Enter your meal type: ");
 
-    // switch($mealType){
-    //     case "Breakfast":
-    //         echo "Select any food Item: \n";
-    //         echo "1. Paratha";
-    //         echo "2. Idli";
-    //         echo "3. Sandwich";
-    //         echo "4. Cereal";
-    //         switch($foodItem){
-    //             case 1:
-    //         }
-    //         break;
-    //     case "Lunch":
-    //         "Select any food Item: \n";
-    //         echo "1. Dal Rice";
-    //         echo "2. Rajah Rice";
-    //         echo "3. Thali";
-    //         echo "4. Fired Rice";
-    //         break;
-    //     case "Dinner":
-    //         echo "Select any food Item: \n";
-    //         echo "1. abcd";
-    //         echo "2. efgh";
-    //         echo "3. ijkl";
-    //         echo "4. mnop";
-    //         switch($foodItem){
+    switch($mealType){
+        case "Breakfast":
+            echo "Select any food Item: \n";
+            echo "1. Paratha";
+            echo "2. Idli";
+            echo "3. Sandwich";
+            echo "4. Cereal";
 
-    //         }
-    //         break;
-        
-    //     case "Snack":
-    //         echo "Select any food Item: \n";
-    //         echo "1. Chai pakoda";
-    //         echo "2. Noodles";
-    //         echo "3. Pav Bhaji";
-    //         echo "4. Poha";
-    //         $foodItem = intval(readline());
-    //         switch($foodItem){
+            $foodItem = intval(readline("Enter the food you want to eat: "));
+            switch($foodItem){
+                case 1: 
+                    echo $foodItem;
+                    break;
+                case 2: 
+                    echo $foodItem;
+                    break;
+                case 3: 
+                    echo $foodItem;
+                    break;
+                case 4: 
+                    echo $foodItem;
+                    break;
+            }
 
-    //         }
-    // }
+            break;
+        case "Lunch":
+            "Select any food Item: \n";
+            echo "1. Dal Rice";
+            echo "2. Rajah Rice";
+            echo "3. Thali";
+            echo "4. Fired Rice";
+            $foodItem = readline("Enter the food you want to eat: ");
+            switch($foodItem){
+                
+            }
+            break;
+        case "Dinner":
+            echo "Select any food Item: \n";
+            echo "1. abcd";
+            echo "2. efgh";
+            echo "3. ijkl";
+            echo "4. mnop";
+            $foodItem = readline("Enter the food you want to eat: ");
+            switch($foodItem){
+                
+            }
+            break;
+        case "Snack":
+            echo "Select any food Item: \n";
+            echo "1. Chai pakoda";
+            echo "2. Noodles";
+            echo "3. Pav Bhaji";
+            echo "4. Poha";
+            $foodItem = readline("Enter the food you want to eat: ");
+            switch($foodItem){
+                
+            }
+            break;
+    }
 ?>
 
 
 <!-- 5 -->
 
 <?php
-    $type = readline("Residential or Commercial: ");
-    $utility = readline("Utility: ");
-    $bill;
+    // $type = readline("Residential or Commercial: ");
+    // $utility = readline("Utility: ");
+    // $bill;
 
-    if($type == "Residential"){
-        if($utiltiy >=0 && $utility <=100){
-            $bill = $utility * 50.5;
-        }
-    }
+    // if($type == "Residential"){
+    //     if($utiltiy >=0 && $utility <=100){
+    //         $bill = $utility * 50.5;
+    //     }
+    // }
 ?>
