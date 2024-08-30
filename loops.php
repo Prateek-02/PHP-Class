@@ -27,6 +27,10 @@
     // $n = readline("Enter the number: ");
     // $fact = 1;
 
+    // if($n==0){
+    //  echo "1";
+    // }
+
     // while($n!=0){
     //     $fact*=$n;
     //     $n--;
