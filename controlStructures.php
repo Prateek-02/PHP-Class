@@ -200,7 +200,7 @@
             echo "3. Sandwich";
             echo "4. Cereal";
 
-            $foodItem = intval(readline("Enter the food you want to eat: "));
+            $foodItem = intval(readline("Enter your choice(1-4): "));
             switch($foodItem){
                 case 1: 
                     echo $foodItem;
@@ -223,7 +223,7 @@
             echo "2. Rajah Rice";
             echo "3. Thali";
             echo "4. Fired Rice";
-            $foodItem = readline("Enter the food you want to eat: ");
+            $foodItem = intval(readline("Enter your choice(1-4): "));
             switch($foodItem){
                 
             }
@@ -234,7 +234,7 @@
             echo "2. efgh";
             echo "3. ijkl";
             echo "4. mnop";
-            $foodItem = readline("Enter the food you want to eat: ");
+            $foodItem = intval(readline("Enter your choice(1-4): "));
             switch($foodItem){
                 
             }
@@ -245,11 +245,13 @@
             echo "2. Noodles";
             echo "3. Pav Bhaji";
             echo "4. Poha";
-            $foodItem = readline("Enter the food you want to eat: ");
+            $foodItem = intval(readline("Enter your choice(1-4): "));
             switch($foodItem){
                 
             }
             break;
+        default:
+            echo "Please  enter a valid choice";
     }
 ?>
 
