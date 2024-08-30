@@ -28,7 +28,7 @@
     // $fact = 1;
 
     // if($n==0){
-    //  echo "1";
+    //  return "1";
     // }
 
     // while($n!=0){
@@ -40,14 +40,43 @@
 ?>
 
 <?php
-    $n = readline("Enetr the number: ");
-    $sum = 0;
+    // $n = readline("Enter number: ");
+    // $fact =1;
+
+    // if($n==0){
+    //     return 1;
+    // }
+    // else{
+    //     for($i=1;$i<=$n;$i++){
+    //         $fact*=$i;
+    //     }
+    //     echo $fact;
+    // }
+?>
+
+<?php
+    // $n = readline("Enetr the number: ");
+    // $sum = 0;
+
+    // while($n!=0){
+    //     $d = $n%10;
+    //     $sum += $d;
+    //     $n = $n/10;
+    // }
+
+    // echo $sum;
+?>
+
+<?php
+    $n = readline("Enter the number: ");
+    $rev = 0;
 
     while($n!=0){
         $d = $n%10;
-        $sum += $d;
-        $n = $n/10;
+        $rev = ($rev*10) + $d;
+        $n = intval($n/10);
     }
 
-    echo $sum;
+    echo $rev;
+
 ?>
