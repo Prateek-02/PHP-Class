@@ -12,3 +12,10 @@
     }
 
 ?>
+
+<?php
+    $color = array("c1" => "red", "c2" => "green", "c3" => "blue");
+    foreach ($color as $key => $value) {
+        echo $key, " => ", $value," ";
+    }
+?>
