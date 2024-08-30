@@ -68,15 +68,42 @@
 ?>
 
 <?php
-    $n = readline("Enter the number: ");
-    $rev = 0;
+    // $n = readline("Enter the number: ");
+    // $rev = 0;
 
-    while($n!=0){
-        $d = $n%10;
-        $rev = ($rev*10) + $d;
-        $n = intval($n/10);
+    // while($n!=0){
+    //     $d = $n%10;
+    //     $rev = ($rev*10) + $d;
+    //     $n = intval($n/10);
+    // }
+
+    // echo $rev;
+
+?>
+
+<?php
+    $a = readline("Enter num1: ");
+    $b = readline("Enter num2: ");
+
+    if($a==0){
+        echo $b;
     }
 
-    echo $rev;
+    if($b == 0){
+        echo $a;
+    }
 
+    while($a!=$b){
+        if($a > $b){
+            $a = $a - $b;
+        }
+
+        else{
+            $b = $a - $b;
+        }
+    }
+
+    echo $a;
+    
+    
 ?>
