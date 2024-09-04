@@ -50,8 +50,7 @@
     echo "Average score: ", $avg,'<br>';
 
     foreach ($marks as $key => $value) {
-        # code...
-        if($value > $avg){
+        if($value >= $avg){
             echo $key, " scored " , $value,'<br>';
         }
     }
