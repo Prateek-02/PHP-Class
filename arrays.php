@@ -54,4 +54,36 @@
             echo $key, " scored " , $value,'<br>';
         }
     }
+
+    echo "<br>";
+?>
+
+
+<?php
+    $numbers = [3,7,2,8,1,4,10,5];
+
+    $oddNum = [];
+
+    $cnt = count($numbers);
+
+    for($i=0;$i<$cnt;$i++){
+        if($numbers[$i]%2 != 0){
+            $oddNum[] = $numbers[$i];
+        }
+    }
+
+    $cntOdd = count($oddNum);
+
+    for($i=0;$i<$cntOdd;$i++){
+        $oddNum[$i] =  $oddNum[$i] * $oddNum[$i];
+    }
+
+
+    sort($oddNum);
+
+    for($i=0;$i<$cntOdd;$i++){
+        echo $oddNum[$i]," ";
+    }
+
+    
 ?>
