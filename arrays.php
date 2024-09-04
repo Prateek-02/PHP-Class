@@ -74,12 +74,11 @@
 
     $cntOdd = count($oddNum);
 
+    sort($oddNum);
+
     for($i=0;$i<$cntOdd;$i++){
         $oddNum[$i] =  $oddNum[$i] * $oddNum[$i];
     }
-
-
-    sort($oddNum);
 
     for($i=0;$i<$cntOdd;$i++){
         echo $oddNum[$i]," ";
