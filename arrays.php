@@ -83,6 +83,4 @@
     for($i=0;$i<$cntOdd;$i++){
         echo $oddNum[$i]," ";
     }
-
-    
 ?>
