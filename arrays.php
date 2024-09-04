@@ -31,7 +31,28 @@
     for($i=0;$i<$cnt;$i++){
         echo "<li>", $color[$i];
     }
-   
 
+    echo"<br>","<br>";
 
+?>
+
+<?php
+    $marks = array("Rahul" => "80" , "Rohit" => "90" , "Aman" => "75" , "Tony" => "96");
+    $cnt = count($marks);
+
+    $sum = 0;
+
+    foreach ($marks as $key => $value) {
+        $sum += $value;
+    }
+
+    $avg = $sum/$cnt;
+    echo "Average score: ", $avg,'<br>';
+
+    foreach ($marks as $key => $value) {
+        # code...
+        if($value > $avg){
+            echo $key, " scored " , $value,'<br>';
+        }
+    }
 ?>
