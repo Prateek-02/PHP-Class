@@ -5,14 +5,18 @@
         array('Rahul',4.9,'fail')
     );
     echo "<table border = '2px'>";
-    foreach($result as $res){
-        echo "<tr>";
-        foreach($res as $r){
-            echo "<td> $r </td>";
+    echo "<tr> 
+                <th> Name </th>
+                <th> CGPA </th>
+                <th> Status </th>
+        </tr>";
+        foreach($result as $res){
+            echo "<tr>";
+            foreach($res as $r){
+                echo "<td> $r </td>";
+            }
+            echo "</tr>";
         }
-        echo"<br>";
-        echo "</tr>";
-    }
     echo "</table>";
     echo "<pre>";
     print_r($result);
