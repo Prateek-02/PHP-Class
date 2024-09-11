@@ -22,3 +22,53 @@
     print_r($result);
    
 ?>
+
+
+<?php
+    $students = [
+        "John" => [
+            "Math" => 85,
+            "Science" => 90,
+            "History" => 78,
+        ],
+        "Jane" => [
+            "Math" => 75,
+            "Science" => 95,
+            "History" => 82,
+        ],
+        "Alice" =>[
+            "Math" => 88,
+            "Science" => 80,
+            "History" => 86,
+        ]
+    ];
+
+    echo "<table border='2px'>";
+    echo "<tr>
+            <th>Student Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>";
+
+    foreach ($students as $name => $subjects) {
+        $total = 0;
+        $subjectCount = count($subjects);
+
+        foreach ($subjects as $subject => $grade) {
+            echo "<tr>";
+            echo "<td>$name</td>";
+            echo "<td>$subject</td>";
+            echo "<td>$grade</td>";
+            echo "</tr>";
+            $total += $grade;
+        }
+
+        $average = $total / $subjectCount;
+        echo "<tr>";
+        echo "<td colspan='2'><strong>Average Grade</strong></td>";
+        echo "<td>" . number_format($average, 2) . "</td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+?>
