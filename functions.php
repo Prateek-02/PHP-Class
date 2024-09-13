@@ -18,16 +18,14 @@
 
 <?php
 
-function area($shape,$l,$b,$r,$h){
-    if($shape == "rectangle"){
-        return $l*$b;
-    }
-    else if($shape == "triangle"){
-        return (float)((1/2)*$b*$h);
-    }
-    else{
-        return 3.14*$r*$r;
-    }
+function rectangle($l,$b){
+    return $l*$b;
+}
+function triangle($b,$h){
+    return (0.5)*$b*$h;
+}
+function circle($r){
+    return 3.14*$r*$r;
 }
 
 $shape = readline("Enter your shape name: ");
@@ -36,6 +34,14 @@ $b = 6;
 $r = 9;
 $h = 10;
 
-echo area($shape,$l,$b,$r,$h);
+if($shape == "rectangle"){
+    echo rectangle($l,$b);
+}
+else if($shape == "triangle"){
+    echo triangle($b,$h);
+}
+else{
+    echo circle($r);
+}
 
 ?>
