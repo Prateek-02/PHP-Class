@@ -96,14 +96,28 @@
 
 
 <?php
-    function addSuffix($string){
-        $fixed = "done";
-        return $string." ".$fixed;
+    // function addSuffix($string){
+    //     $fixed = "done";
+    //     return $string." ".$fixed;
+    // }
+
+    // $string = readline("Enter the string: ");
+    // echo addSuffix($string);
+    // echo "\n";
+    // echo $string;
+
+?>
+
+<?php
+    function convertToFahrenheit(&$celcius){
+        $fahrenheit = floatval($celcius*9/5) + 32;
+        return $fahrenheit;
     }
 
-    $string = readline("Enter the string: ");
-    echo addSuffix($string);
-    echo"<br>";
-    echo $string;
+    $celcius = readline("Enter temperature in celcius: ");
+    $fahrenheit = floatval($celcius*9/5) + 32;
+    echo $fahrenheit;
+    echo "\n";
 
+    echo convertToFahrenheit($celcius);
 ?>
