@@ -111,7 +111,6 @@
 <?php
     function convertToFahrenheit(&$celcius){
         $fahrenheit = floatval($celcius*9/5) + 32;
-        return $fahrenheit;
     }
 
     $celcius = readline("Enter temperature in celcius: ");
@@ -119,5 +118,7 @@
     echo $fahrenheit;
     echo "\n";
 
-    echo convertToFahrenheit($celcius);
+    convertToFahrenheit($celcius);
+
+    echo $fahrenheit;
 ?>
