@@ -69,27 +69,41 @@
 ?>
 
 <?php
-    function calcBmi($weight,$height){
-        return floatval(($weight)/($height*$height));
-    }
+    // function calcBmi($weight,$height){
+    //     return floatval(($weight)/($height*$height));
+    // }
 
-    $weight = readline("Enter your weight: ");
-    $height = readline("Enter your height: ");
+    // $weight = readline("Enter your weight: ");
+    // $height = readline("Enter your height: ");
 
-    echo calcBmi($weight,$height);
+    // echo calcBmi($weight,$height);
 ?>
 
 <?php
-    function splitBill($totalBill,$TotalPeople){
-        $total = floatval($totalBill/$TotalPeople);
+    // function splitBill($totalBill,$TotalPeople){
+    //     $total = floatval($totalBill/$TotalPeople);
 
-        return $total;
+    //     return $total;
 
+    // }
+
+    // $totalBill = readline("Enter bill amount: ");
+    // $TotalPeople = readline("Enter no. of people: ");
+
+    // echo splitBill($totalBill,$TotalPeople);
+    
+?>
+
+
+<?php
+    function addSuffix($string){
+        $fixed = "done";
+        return $string." ".$fixed;
     }
 
-    $totalBill = readline("Enter bill amount: ");
-    $TotalPeople = readline("Enter no. of people: ");
+    $string = readline("Enter the string: ");
+    echo addSuffix($string);
+    echo"<br>";
+    echo $string;
 
-    echo splitBill($totalBill,$TotalPeople);
-    
 ?>
