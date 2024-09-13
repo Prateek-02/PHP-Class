@@ -78,3 +78,18 @@
 
     echo calcBmi($weight,$height);
 ?>
+
+<?php
+    function splitBill($totalBill,$TotalPeople){
+        $total = floatval($totalBill/$TotalPeople);
+
+        return $total;
+
+    }
+
+    $totalBill = readline("Enter bill amount: ");
+    $TotalPeople = readline("Enter no. of people: ");
+
+    echo splitBill($totalBill,$TotalPeople);
+    
+?>
