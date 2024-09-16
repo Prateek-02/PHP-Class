@@ -10,17 +10,34 @@
 ?>
 
 <?php
-    function sum(){
-        static $a = 10;
-        $b = 20;
+    // function sum(){
+    //     static $a = 10;
+    //     $b = 20;
 
-        $a++;
-        $b++;
+    //     $a++;
+    //     $b++;
 
-        return $a." ".$b;
+    //     return $a." ".$b;
 
+    // }
+
+    // echo sum();
+    // echo "\n";
+    // echo sum();
+
+?>
+
+<?php
+    function outer(){
+        $a = "hello";
+        function inner(&$a){
+            echo $a;
+            $a = "World";
+            echo $a;
+        }
+        inner($a);
+        echo $a;
     }
-
-    echo sum();
-
+    outer();
+    
 ?>
