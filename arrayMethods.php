@@ -29,10 +29,50 @@
 
 
 <?php
-    $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
-    $a2 = array("e"=>"red","f"=>"green","g"=>"blue");
-    $a3 = array("h"=>"magenta","i"=>"seagreen");
+    // $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // $a2 = array("e"=>"red","f"=>"green","g"=>"blue");
+    // $a3 = array("h"=>"magenta","i"=>"seagreen");
 
-    $result = array_diff($a1,$a2,$a3);
-    print_r($result);
+    // $result = array_diff($a1,$a2,$a3);
+    // print_r($result);
 ?> 
+
+<?php
+    // $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // $result = array_flip($a1);
+    // print_r($result);
+?>
+
+<?php
+    // $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // $a2 = array("e"=>"red","f"=>"green","g"=>"blue");
+    // $a3 = array("red","blue");
+
+    // $res = array_intersect($a1,$a2,$a3);
+
+    // print_r($res);
+?>
+
+<?php
+    $arr = array("Ind","Aus","Sa","Nz","Eng","Sl","Pak");
+
+    array_pop($arr);
+    print_r($arr);
+
+    echo"<br>";
+
+    array_push($arr,"Agf");
+    print_r($arr);
+    
+    echo "<br>";
+
+    array_shift($arr);
+    print_r($arr);
+
+    echo "<br>";
+
+    array_unshift($arr,"Ind");
+    print_r($arr);
+
+
+?>
