@@ -54,25 +54,36 @@
 ?>
 
 <?php
-    $arr = array("Ind","Aus","Sa","Nz","Eng","Sl","Pak");
+    // $arr = array("Ind","Aus","Sa","Nz","Eng","Sl","Pak");
 
-    array_pop($arr);
-    print_r($arr);
+    // array_pop($arr);
+    // print_r($arr);
 
-    echo"<br>";
+    // echo"<br>";
 
-    array_push($arr,"Agf");
-    print_r($arr);
+    // array_push($arr,"Agf");
+    // print_r($arr);
     
-    echo "<br>";
+    // echo "<br>";
 
-    array_shift($arr);
-    print_r($arr);
+    // array_shift($arr);
+    // print_r($arr);
 
-    echo "<br>";
+    // echo "<br>";
 
-    array_unshift($arr,"Ind");
-    print_r($arr);
+    // array_unshift($arr,"Ind");
+    // print_r($arr);
 
 
+?>
+
+<?php
+//    $a = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+//    echo array_search("red",$a);
+   
+?>
+
+<?php
+    $a = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    print_r(array_splice($a,1,2));
 ?>
