@@ -44,13 +44,13 @@
 ?>
 
 <?php
-    // $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
-    // $a2 = array("e"=>"red","f"=>"green","g"=>"blue");
-    // $a3 = array("red","blue");
+    $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    $a2 = array("e"=>"red","f"=>"green","g"=>"blue");
+    $a3 = array("red","blue");
 
-    // $res = array_intersect($a1,$a2,$a3);
+    $res = array_intersect($a1,$a2,$a3);
 
-    // print_r($res);
+    print_r($res);
 ?>
 
 <?php
@@ -84,6 +84,6 @@
 ?>
 
 <?php
-    $a = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
-    print_r(array_splice($a,1,2));
+    // $a = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+    // print_r(array_splice($a,1,2));
 ?>
