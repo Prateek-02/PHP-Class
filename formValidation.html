@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form id="contactForm">
+        <h1>Contact Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="website">Website:</label>
+        <input type="text" name="website" id="web">
+        <br><br>
+        <label for="comment">Comment Below:</label>
+        <br>
+        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other">
+        <br><br>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+    <p id="msg"></p>
+
+    <script>
+        const form = document.querySelector("#contactForm");
+        const msg = document.querySelector("#msg");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            const name = document.querySelector("#name").value;
+            const email = document.querySelector("#email").value;
+
+            if (name.length <= 3 || name.length >= 20) {
+                msg.innerHTML = "Please enter a valid name between 4 and 20 characters.";
+                return;
+            }
+   
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                msg.innerHTML = "Please enter a valid email address.";
+                return;
+            }
+
+            msg.innerHTML = "Form submitted successfully!";
+        });
+    </script>
+</body>
+</html>

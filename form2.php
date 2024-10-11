@@ -33,8 +33,8 @@
 <div class="container">
         <form method = "POST" action="./req.php">
             <input type="hidden" name="name" value="<?php echo $_REQUEST['name']; ?>">
-            <input type="hidden" name="password" value="<?php echo $_REQUEST['password']; ?>">
-            <label for="number">Name:</label>
+            <input type="hidden" name="email" value="<?php echo $_REQUEST['email']; ?>">
+            <label for="number">Number:</label>
             <input type="number" name = "number" id = "no" required placeholder = "Enter your number">
             <br><br>
             <label for="add">Address: </label>
