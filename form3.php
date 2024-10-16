@@ -11,7 +11,8 @@
             $errname = "Name is required";
         }
         else{
-            echo "The name is ", $_POST['name'], "<br>";
+            $name = test_input($_POST['name']);
+            echo "The name is ", $name , "<br>";
         }
 
         // Email validation
@@ -22,8 +23,8 @@
             $erremail = "Invalid email format";
         }
         else{
-            $email = $_POST['email'];
-            echo "The email is ", $email, "<br>";
+            $email = test_input($_POST['email']);
+            echo "The email is ", $email , "<br>";
         }
 
         // Number validation
@@ -34,9 +35,16 @@
             $errnumber = "Only numbers are allowed";
         }
         else{
-            $number = $_POST['number'];
+            $number = test_input($_POST['number']);
             echo "The number is ", $number, "<br>";
         }
+    }
+
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
 ?>
 <!DOCTYPE html>
