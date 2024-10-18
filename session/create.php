@@ -7,7 +7,7 @@
     <body>
         <?php
             if(isset($_SESSION["USERNAME"])){
-                echo "The session is created", $_SESSION["USERNAME"];
+                echo "The session is created ", $_SESSION["USERNAME"];
             }
             else{
                 echo "The session is not set";
