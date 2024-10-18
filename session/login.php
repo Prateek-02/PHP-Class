@@ -16,5 +16,13 @@
                 }
             }
         ?>
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method = "post">
+            Username <input type="text" name = "username"><br><br>
+            Password <input type="password" name = "password"><br><br>
+            <button type="submit" name= "login">Login</button>
+            <h4><?php echo $msg ?></h4>
+        </form>
+        <a href="myProfile.php">My Profile</a>
+        <a href="./logout.php">Logout</a>
     </body>
 </html>
