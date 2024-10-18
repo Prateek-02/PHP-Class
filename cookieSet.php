@@ -1,5 +1,5 @@
 <?php
-// Set a cookie with name "user" and value "Saksham" that expires in 1 hour
+// Set a cookie with name "user" and value "Prateek" that expires in 1 hour
 $cookie_name = "user";
 $cookie_value = "Prateek";
 setcookie($cookie_name, $cookie_value, time() + 60, "/"); // 3600 seconds = 1 hour
