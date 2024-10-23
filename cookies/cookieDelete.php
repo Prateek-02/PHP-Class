@@ -4,7 +4,7 @@ $cookie_value = "Prateek";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['set_cookie'])) {
-        // Set a cookie with the name "user" and value "Saksham" that expires in 1 hour
+        // Set a cookie with the name "user" and value "Prateek" that expires in 1 hour
         setcookie($cookie_name, $cookie_value, time() + 3600, "/"); // 3600 seconds = 1 hour
         $message = "Cookie has been set!";
     } elseif (isset($_POST['delete_cookie'])) {
