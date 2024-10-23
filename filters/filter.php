@@ -10,3 +10,5 @@
     echo $newstr;
     echo "<br>";
 ?>
+
+<!-- filter_var() is used for validating email -->
