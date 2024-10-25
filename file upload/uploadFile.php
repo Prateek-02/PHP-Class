@@ -10,18 +10,17 @@
 <h2>Upload a File</h2>
 
 <?php
-$message = ""; // Initialize message variable
+$message = ""; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $targetDir = "uploads/";  // Directory for file uploads
     $targetFile = $targetDir . basename($_FILES["fileToUpload"]["name"]);
 
-    // Create the 'uploads' directory if it doesn't exist
+ 
     if (!is_dir($targetDir)) {
         mkdir($targetDir, 0777, true);
     }
 
-    // Move uploaded file to the 'uploads/' directory
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
         $message = "File '" . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . "' has been uploaded successfully.";
     } else {
