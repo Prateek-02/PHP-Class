@@ -31,7 +31,7 @@
     }
     while ($a < 10);
 
-    echo "<br>";
+    echo "<br>"; 
     // for loop
     echo "For loop: ";
     $a = 0;
